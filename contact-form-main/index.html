@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Contact form</title>
+
+  
+</head>
+<body>
+  <div class="main-box">
+    <div class="form-box">
+      <h1>Contact Us</h1>
+      <div class="name-box">
+        <form>
+          <div class="user-box">
+            <label for="Name" class="name">First Name</label>
+            <input type="text" name="Name" id="Name" class="smallInput input">
+            <p class="error">This field is required</p>
+          </div>
+        </form>
+        <form>
+          <div class="user-box">
+            <label for="Lastname" class="name">Last Name</label>
+            <input type="text" name="Lastname" id="Lastname" class="smallInput input">
+            <p class="error">This field is required</p>
+          </div>
+        </form>
+      </div>
+      <div class="mail-box">
+          <label for="email" class="name">Email Address</label>
+          <input type="email" name="email" id="email" class="bigForm input">
+          <p class="error">Please enter a valid email address</p>
+          <p class="error">This field is required</p>
+      </div>
+      <div class="query-box" name="query-box">
+        <label for="query-box" class="name">Query Type</label>
+        <div class="inner-query">
+          <div class="small-query input">
+            <label class="query-name" ><input type="radio" name="radio" id="radioFirst">
+            General Enquiry</label>
+          </div>
+          <div class="small-query input">
+            <label class="query-name" ><input type="radio" name="radio" id="radioSecond" value="Support Request">Support Request</label>
+          </div>
+        </div>
+        <p class="error">Please select a query type</p>
+      </div>
+      <div class="message-box">
+        <label for="message" class="name">Message</label>
+        <textarea name="message" id="message" class="message input" rows="10" cols="50"></textarea>
+        <p class="error">This field is required</p>
+      </div>
+      <div class="rights">
+        <div class="rights-box">
+          <input type="checkbox" name="checkbox" id="checkbox" >
+          <label for="checkbox" class="name checkbox">I consent to being contacted by the team</label>
+        </div>
+        <p class="error">To submit this form, please consent to being contacted</p>
+      </div>
+      <button type="submit" class="submit">Submit</button>
+    </div>
+  </div>
+
+</body>
+</html>
